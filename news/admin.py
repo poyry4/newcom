@@ -6,5 +6,4 @@ from .models import News
 
 admin.site.register(CatNews)
 
-
 admin.site.register(News)

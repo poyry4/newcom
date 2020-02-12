@@ -8,12 +8,12 @@ class CatNews(models.Model):
     category = models.CharField( max_length=50)
 
     def __str__(self):
-        return self.category
- 
+        return self.title
+
 # Create your models here.
 class News(models.Model):
     title = models.CharField(max_length=100)
-    body = models.TextField(null=False)
+    body = models.TextField(Null=False)
     date = models.DateTimeField(auto_now_add=True)
     img = models.ImageField(default='default.png', blank=True)
     author = models.ForeignKey(User, default=None, on_delete=models.CASCADE)
@@ -22,5 +22,7 @@ class News(models.Model):
     def __str__(self):
         return self.title
 
+
     def snippet(self):
         return self.body[:50] + '...'
+
