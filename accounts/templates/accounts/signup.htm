@@ -1,0 +1,12 @@
+{% extends 'baseAdmin.htm' %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btnsaddarsad btn btn-primary" value="signup" >
+        signup
+    </button>
+</form>
+
+{% endblock %}

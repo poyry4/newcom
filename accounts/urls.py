@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-=======
 from django.urls import path
-from . import  views
+from . import views
 
 app_name = 'accounts'
 
 urlpatterns = [
-
+    path('signup/', views.signupView, name="signup"),
+    path('login/', views.loginView, name="login"),
+    path('logout/', views.logoutView, name="logout"),
 ]
->>>>>>> 9ccd98bdad796978b861a660d6d7945bfe6a582b

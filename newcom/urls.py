@@ -11,7 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('adminsite/', include('adminsite.urls')) ,
     #path('', include('home.urls')),
-    #path('accounts/', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
     path('commercial/', include('commercial.urls')),
     #path('news/', include('news.urls')),
 
